@@ -1,0 +1,181 @@
+@media (min-width: 500px) {
+    body {
+      display: none; /* Hide the body */
+    }
+  }
+p,h3{
+    margin: 0;
+}
+.Home {
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.Home-header {
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+.header-background {
+  background-image: url("../assets/images/Frame\ 2305.png");
+  z-index: 1;
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.Home-header > :not(.header-background) {
+  /* Styles for all child elements except header-background */
+  z-index: 2;
+}
+.mobile-topbar {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.time {
+  color: white;
+}
+.utils {
+  color: white;
+  display: flex;
+  gap: 1rem;
+}
+/* mobile topbar finishes here  */
+
+.profile {
+  height: 8vh;
+  /* background: red; */
+  display: grid;
+  grid-template-columns: 1fr 3fr 1.7fr;
+  /* align-items: center; */
+  gap: 1rem;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+.pfp {
+  grid-column-start: 1;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/images/Ellipse\ 7.png");
+  background-repeat: no-repeat;
+}
+
+.profile-details {
+  height: 100%;
+  grid-column-start: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.profile-details > p {
+  margin: 0;
+  color: white;
+}
+.button {
+  grid-column-start: 3;
+}
+.button > button {
+  height: 80%;
+  width: 100%;
+  max-width: 6rem;
+  border-radius: 20px;
+  color: white;
+
+  background-image: linear-gradient(to bottom, #3a53d7 0%, #455ede 100%);
+  border: none; /* Remove default border for a cleaner look */
+  color: white; /* Text color for better visibility */
+  padding: 10px 20px; /* Adjust padding as needed */
+  cursor: pointer; /* Indicate interactivity */
+  /* Optional: Add hover effects */
+  &:hover {
+    opacity: 0.8; /* Add slight translucency on hover */
+  }
+}
+/* profile ends here  */
+.portfolio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 1rem;
+}
+.data>p,h3{
+    color: white;
+}
+.data>h3{
+    font-size: 2rem;
+}
+.chart{
+    display: flex;
+    gap: 1rem;
+    height: 100%;
+    color: white;
+}
+.chart> :first-child{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius:50%;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, #3a53d7 0%, #455ede 100%);
+    border: none; /* Remove default border for a cleaner look */
+    color: white; /* Text color for better visibility */
+    /* padding: 10px 20px;  */
+    cursor: pointer; /* Indicate interactivity */
+    /* Optional: Add hover effects */
+    &:hover {
+      opacity: 0.8; /* Add slight translucency on hover */
+    }
+
+}
+.graph{
+    background-image: url("../assets/images//Frame\ 39955.png");
+    height: 100%;
+    width: 7rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* portfolio ends  */
+
+/* content starts  */
+    .content{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+    .carousel{
+        background-image: url("../assets/images/Frame\ 2283.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 20vh;
+        width: 90%;
+        align-self: flex-end;
+
+    }
+    .content-utils{
+        margin-top: 1rem;
+        background-image: url("../assets/images/Frame\ 271.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 30vh;
+        width: 90%;
+    }
+    .content-portfolio{
+        margin-top: 1rem;
+        background-image: url("../assets/images/Frame\ 39919.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 30vh;
+        width: 90%;
+    }
+/* content ends  */

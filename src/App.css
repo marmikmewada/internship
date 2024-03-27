@@ -1,0 +1,14 @@
+:root {  /* The root element is a common place to define variables */
+  --primary-color: #007bff;
+  --secondary-color: #ffc107;
+  --text-color: #212529;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
